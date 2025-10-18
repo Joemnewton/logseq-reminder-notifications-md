@@ -2,7 +2,7 @@
 
 ## ✅ Successfully Pushed to GitHub
 
-**Repository**: https://github.com/Joemnewton/logseq-reminder-notifications
+**Repository**: https://github.com/Joemnewton/logseq-reminder-plugin-md
 
 ## 🎯 Final Status Summary
 
@@ -32,7 +32,7 @@
 ## 📁 Repository Contents
 
 ```
-logseq-reminder-notifications/
+logseq-reminder-plugin-md/
 ├── package.json          # v1.2.2 with stable metadata
 ├── index.js             # Main plugin logic (cleaned up)
 ├── utils/time.js        # Time parsing utilities
@@ -52,7 +52,7 @@ Users can now install by:
 
 1. **Clone from GitHub**:
    ```bash
-   git clone https://github.com/Joemnewton/logseq-reminder-notifications.git
+   git clone https://github.com/Joemnewton/logseq-reminder-plugin-md.git
    ```
 
 2. **Load in Logseq**:
@@ -80,4 +80,4 @@ The foundation is now solid for gradually adding back advanced features:
 - v1.5.0: All-day reminder support
 - v1.6.0: Quiet hours and customization
 
-**Repository URL**: https://github.com/Joemnewton/logseq-reminder-notifications
+**Repository URL**: https://github.com/Joemnewton/logseq-reminder-plugin-md

@@ -1,10 +1,12 @@
-# Logseq Reminder Notifications Plugin
+# Logseq Reminder Notifications Plugin (Markdown Version)
 
 **v1.3.0 - FEATURE RELEASE** 🚀
 
 ![Plugin Demo](https://img.shields.io/badge/Logseq-Plugin-blue) ![Version](https://img.shields.io/badge/version-1.3.0-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Desktop and in-app notifications for scheduled blocks in Logseq. Never miss your scheduled tasks and reminders again!
+
+> **Important:** This plugin is designed for **Logseq Markdown/File-based graphs**. If you're using Logseq's new Database (DB) version, please use the DB-compatible version of this plugin instead.
 
 ## 🎬 Demo
 
@@ -35,14 +37,21 @@ Desktop and in-app notifications for scheduled blocks in Logseq. Never miss your
 
 ## Installation
 
+### Prerequisites
+
+- **Logseq Markdown/File-based graph** - This plugin works with traditional Logseq file-based graphs only
+- If you're using Logseq's Database (DB) version, this plugin will NOT work correctly. Use the DB-compatible version instead.
+
+### Steps
+
 1. **Download this repository:**
    ```bash
-   git clone https://github.com/Joemnewton/logseq-reminder-notifications.git
+   git clone https://github.com/Joemnewton/logseq-reminder-plugin-md.git
    ```
 
 2. **Load in Logseq:**
    - Settings → Plugins → "Load unpacked plugin"
-   - Select the `logseq-reminder-notifications` folder
+   - Select the `logseq-reminder-plugin-md` folder
    - Enable the plugin
 
 3. **Grant permissions:**

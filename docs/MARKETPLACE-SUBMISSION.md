@@ -3,7 +3,7 @@
 ## 📋 **Pre-Submission Checklist**
 
 ### ✅ **Completed Requirements**
-- [x] Public GitHub repository: `Joemnewton/logseq-reminder-notifications`
+- [x] Public GitHub repository: `Joemnewton/logseq-reminder-plugin-md`
 - [x] MIT License included
 - [x] Working plugin functionality (v1.2.2)
 - [x] README with usage instructions
@@ -61,14 +61,14 @@ cd marketplace
 
 ```bash
 # Create plugin directory
-mkdir -p packages/logseq-reminder-notifications
+mkdir -p packages/logseq-reminder-plugin-md
 
 # Copy manifest.json to the package directory
-cp /path/to/your/plugin/manifest.json packages/logseq-reminder-notifications/
+cp /path/to/your/plugin/manifest.json packages/logseq-reminder-plugin-md/
 
 # Create branch and commit
-git checkout -b add-reminder-notifications-plugin
-git add packages/logseq-reminder-notifications/
+git checkout -b add-reminder-plugin-md
+git add packages/logseq-reminder-plugin-md/
 git commit -m "Add Reminder Notifications plugin"
 git push origin add-reminder-notifications-plugin
 ```
@@ -82,7 +82,7 @@ git push origin add-reminder-notifications-plugin
    ```markdown
    ## Plugin: Reminder Notifications
    
-   **Repository**: https://github.com/Joemnewton/logseq-reminder-notifications
+   **Repository**: https://github.com/Joemnewton/logseq-reminder-plugin-md
    **Latest Release**: v1.2.2
    
    ### Description
@@ -133,7 +133,7 @@ git tag v1.2.2
 git push origin v1.2.2
 
 # 3. Wait for GitHub Action to create release with ZIP
-# Check: https://github.com/Joemnewton/logseq-reminder-notifications/releases
+# Check: https://github.com/Joemnewton/logseq-reminder-plugin-md/releases
 
 # 4. Fork marketplace repo and follow steps above
 ```

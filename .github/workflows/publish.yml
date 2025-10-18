@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  PLUGIN_NAME: logseq-reminder-notifications
+  PLUGIN_NAME: logseq-reminder-plugin-md
 
 jobs:
   build-and-release:

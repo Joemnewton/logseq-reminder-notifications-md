@@ -1,6 +1,9 @@
 /**
- * Logseq Reminder Notifications Plugin
+ * Logseq Reminder Notifications Plugin (Markdown/File-based Version)
  * Provides desktop and in-app notifications for scheduled blocks
+ *
+ * NOTE: This version is for Logseq Markdown/File-based graphs only.
+ * For DB-based graphs, use the DB version of this plugin.
  */
 
 /**

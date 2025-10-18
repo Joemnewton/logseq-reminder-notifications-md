@@ -37,7 +37,7 @@ Once you have screenshots, update README.md:
 #### 3. **Submit to Marketplace** 📤
 Follow the guide in `MARKETPLACE-SUBMISSION.md`:
 1. Fork https://github.com/logseq/marketplace
-2. Create `packages/logseq-reminder-notifications/manifest.json`
+2. Create `packages/logseq-reminder-plugin-md/manifest.json`
 3. Submit pull request
 
 ### 🔍 **Current Status**
@@ -57,7 +57,7 @@ Follow the guide in `MARKETPLACE-SUBMISSION.md`:
 ### 📋 **GitHub Release Status**
 
 Check your releases at:
-**https://github.com/Joemnewton/logseq-reminder-notifications/releases**
+**https://github.com/Joemnewton/logseq-reminder-plugin-md/releases**
 
 The GitHub Action should have automatically created a `v1.2.2` release with:
 - ✅ Release notes
@@ -95,5 +95,5 @@ Your plugin is **professional quality** and ready for the Logseq community! The 
 
 Just add those screenshots and submit! 🚀
 
-**Repository**: https://github.com/Joemnewton/logseq-reminder-notifications  
+**Repository**: https://github.com/Joemnewton/logseq-reminder-plugin-md
 **Next Step**: Take screenshots → Submit to marketplace

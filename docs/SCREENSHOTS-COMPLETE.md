@@ -14,7 +14,7 @@
   - Console Output section made optional (since you don't have that screenshot yet)
 
 ### 🚀 **Successfully Pushed to GitHub:**
-- Repository: https://github.com/Joemnewton/logseq-reminder-notifications
+- Repository: https://github.com/Joemnewton/logseq-reminder-plugin-md
 - All changes committed and pushed
 - Screenshots are now live and visible on GitHub!
 
@@ -36,13 +36,13 @@ Your plugin is now **100% ready** for Logseq Marketplace submission! ✨
 Follow the guide in `MARKETPLACE-SUBMISSION.md`:
 
 1. **Fork the marketplace repo**: https://github.com/logseq/marketplace
-2. **Create plugin entry**: `packages/logseq-reminder-notifications/manifest.json`  
+2. **Create plugin entry**: `packages/logseq-reminder-plugin-md/manifest.json`  
 3. **Submit pull request** to get your plugin in the official marketplace
 
 ### 🎉 **Your Plugin Screenshots Are Now Live!**
 
 Visit your repository to see the screenshots in action:
-**https://github.com/Joemnewton/logseq-reminder-notifications**
+**https://github.com/Joemnewton/logseq-reminder-plugin-md**
 
 The README now displays your actual plugin screenshots, making it look professional and ready for users to understand what your plugin does.
 
@@ -56,4 +56,4 @@ You now have a **production-ready Logseq plugin** with:
 
 Your plugin is ready to help the Logseq community never miss their scheduled reminders again! 🚀
 
-**Repository URL**: https://github.com/Joemnewton/logseq-reminder-notifications
+**Repository URL**: https://github.com/Joemnewton/logseq-reminder-plugin-md
