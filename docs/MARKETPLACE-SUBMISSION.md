@@ -3,7 +3,7 @@
 ## 📋 **Pre-Submission Checklist**
 
 ### ✅ **Completed Requirements**
-- [x] Public GitHub repository: `Joemnewton/logseq-reminder-plugin-md`
+- [x] Public GitHub repository: `Joemnewton/logseq-reminder-notifications-md`
 - [x] MIT License included
 - [x] Working plugin functionality (v1.2.2)
 - [x] README with usage instructions
@@ -82,11 +82,11 @@ git push origin add-reminder-notifications-plugin
    ```markdown
    ## Plugin: Reminder Notifications
    
-   **Repository**: https://github.com/Joemnewton/logseq-reminder-plugin-md
+   **Repository**: https://github.com/Joemnewton/logseq-reminder-notifications-md
    **Latest Release**: v1.2.2
    
    ### Description
-   Desktop and in-app notifications for scheduled blocks in Logseq. Never miss your scheduled tasks and reminders again!
+   Desktop reminders for scheduled blocks in Logseq Markdown graphs. Never miss your scheduled tasks and reminders again!
    
    ### Key Features
    - Desktop notifications for scheduled blocks
@@ -133,7 +133,7 @@ git tag v1.2.2
 git push origin v1.2.2
 
 # 3. Wait for GitHub Action to create release with ZIP
-# Check: https://github.com/Joemnewton/logseq-reminder-plugin-md/releases
+# Check: https://github.com/Joemnewton/logseq-reminder-notifications-md/releases
 
 # 4. Fork marketplace repo and follow steps above
 ```

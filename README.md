@@ -1,156 +1,116 @@
-# Logseq Reminder Notifications Plugin (Markdown Version)
+# Reminder Notifications (Markdown)
 
-**v1.3.0 - FEATURE RELEASE** 🚀
+> Desktop + in-app reminders for scheduled blocks living in Logseq's **Markdown/file-based graphs**.  
+> Works anywhere Markdown graphs run on Desktop, Web, and Mobile clients.
 
-![Plugin Demo](https://img.shields.io/badge/Logseq-Plugin-blue) ![Version](https://img.shields.io/badge/version-1.3.0-green) ![License](https://img.shields.io/badge/license-MIT-blue)
+| Feature Pack | Highlights |
+| --- | --- |
+| ✅ Desktop & mobile notifications | Native OS toasts (desktop) + Logseq in-app banners everywhere |
+| ✅ Multiple warning times | Comma-separated intervals (`15,5,0`) |
+| ✅ Quiet hours | Silence reminders overnight or during focus time |
+| ✅ All-day support | Convert `scheduled:: 2025-10-14` into a reminder at your preferred time |
 
-Desktop and in-app notifications for scheduled blocks in Logseq. Never miss your scheduled tasks and reminders again!
+> Need the Database build instead? Use the [DB version of Reminder Notifications](https://github.com/Joemnewton/logseq-reminder-notifications-db).
 
-> **Important:** This plugin is designed for **Logseq Markdown/File-based graphs**. If you're using Logseq's new Database (DB) version, please use the DB-compatible version of this plugin instead.
+---
 
-## 🎬 Demo
+## Compatibility Cheat Sheet
 
-![Desktop Notification Demo](./screenshots/Desktop_Notification.png)
-*Desktop notification and in-app message for scheduled reminders*
+| Supported | Not Supported |
+| --- | --- |
+| Logseq Desktop/Web/Mobile using **Markdown/file-based graphs** | Logseq Database (DB) graphs |
+| `/reminders: rescan` command | DB plugin settings or DB-only properties |
+| In-app + desktop/mobile notifications | Automatic support for SQLite graphs (install the DB build above) |
 
-## ✨ Key Features
+> **Tip:** Markdown graphs are folders of `.md` files you open directly. If your graph path ends in `db.sqlite`, you're on the DB format.
 
-## 🎯 Current Status
+---
 
-✅ **WORKING FEATURES:**
-- 🔔 Desktop notifications for scheduled blocks
-- 📱 In-app toast messages  
-- ⚡ Automatic block detection and parsing
-- 🕒 Reliable notification timing
-- 📋 Manual rescan via `/reminders: rescan` command
-- 🔍 Smart parsing of `SCHEDULED: <timestamp>` formats
-- 🛡️ Duplicate notification prevention
-- ⏰ Past event filtering (ignores events older than 5 minutes)
+## Screenshots
 
-✅ **NEW IN v1.3.0:**
-- ⚙️ Settings GUI (Logseq-native)
-- ⏱️ Multiple reminder intervals (comma-separated, e.g., `15,5,0`)
-- 📅 All-day reminders with configurable time (e.g., `09:00`)
-- 🔁 Polling interval and daily rescan hour configurable
-- 🔔 Refreshed bell icon for desktop notifications
-- 🌙 Quiet hours to disable notifications during specified times
-
-## Installation
-
-### Prerequisites
-
-- **Logseq Markdown/File-based graph** - This plugin works with traditional Logseq file-based graphs only
-- If you're using Logseq's Database (DB) version, this plugin will NOT work correctly. Use the DB-compatible version instead.
-
-### Steps
-
-1. **Download this repository:**
-   ```bash
-   git clone https://github.com/Joemnewton/logseq-reminder-plugin-md.git
-   ```
-
-2. **Load in Logseq:**
-   - Settings → Plugins → "Load unpacked plugin"
-   - Select the `logseq-reminder-plugin-md` folder
-   - Enable the plugin
-
-3. **Grant permissions:**
-   - Allow notifications when prompted
-   - Check browser notification settings if needed
-
-## Usage
-
-### Supported Formats
-
-**Journal-style timestamps (RECOMMENDED):**
-```
-SCHEDULED: <2025-10-14 Mon 14:30> Call the dentist
-SCHEDULED: <2025-10-15 Tue 09:00> Team meeting
-```
-
-**Property-based scheduling:**
-```
-- Call the dentist
-  scheduled:: 2025-10-14 14:30
-```
-
-### Commands
-
-- `/reminders: rescan` - Manually refresh reminder list
-
-## 📺 Screenshots
-
-### Desktop Notifications
 ![Desktop Notification](./screenshots/Desktop_Notification.png)
-*Native desktop notification that appears even when Logseq is minimized*
+*Native OS toast fired from a scheduled block*
 
-### In-App Notifications  
 ![In-App Message](./screenshots/In_App_Notification.png)
-*Toast message that appears within Logseq when you're actively using the app*
+*Matching in-app reminder when you're already inside Logseq*
 
-### Console Output (Optional)
-For debugging, you can view plugin activity in the browser console (F12 → Console tab):
-- Plugin startup messages
-- Block scanning and detection logs  
-- Notification trigger events
+---
 
-## Configuration
+## Quick Start
 
-Open Logseq → Settings → Plugins → Reminder Notifications.
+1. **Clone or download**
+   ```bash
+   git clone https://github.com/Joemnewton/logseq-reminder-notifications-md.git
+   ```
+2. **Load in Logseq**
+   - `Settings → Plugins → Load unpacked plugin`
+   - Select the `logseq-reminder-plugin-md` folder
+3. **Reload on mobile/web**
+   - Use the same folder (or zip) synced via iCloud/Drive/Git to run the plugin across your Markdown graphs.
 
-Settings:
-- `Default Reminder Intervals` (string): Comma-separated minutes before event, e.g. `5,0` or `15,5,0`
-- `Enable All-Day Reminders` (boolean): Enable reminders for date-only schedules
-- `All-Day Reminder Time` (string): Time for all-day reminders, e.g. `09:00`
-- `Polling Interval (seconds)` (number): How often to check due reminders (10-300 seconds)
-- `Daily Rescan Hour` (number): Hour of day to re-scan database (0-23)
-- `Enable Quiet Hours` (boolean): Disable notifications during specified hours
-- `Quiet Hours Start` (number): Hour to start quiet hours (0-23, e.g., 22 for 10 PM)
-- `Quiet Hours End` (number): Hour to end quiet hours (0-23, e.g., 7 for 7 AM)
+---
 
-## 🔧 What's New (v1.3.0)
+## Using Reminders
 
-- ✅ Added full Settings GUI using `logseq.useSettingsSchema()`
-- ✅ Configurable reminder intervals (comma-separated input)
-- ✅ Optional all-day reminders with custom time
-- ✅ Configurable polling interval and daily rescan hour
-- ✅ Updated desktop notification icon to a bell
-- ✅ Quiet hours feature to disable notifications during sleep/work hours
+### Recommended format (Markdown graphs)
+
+```
+- Prep project retro
+  scheduled:: 2025-02-10 15:00
+```
+
+### Journal style (classic Logseq)
+
+```
+SCHEDULED: <2025-02-10 Mon 15:00> Prep project retro
+```
+
+### Manual rescan
+
+- Slash command: `/reminders: rescan`
+- Command palette entry: “Reminder Notifications → Rescan now”
+
+---
+
+## Settings Reference
+
+| Setting | Description |
+| --- | --- |
+| Default reminder intervals | Comma-separated minutes before the event (`15,5,0`) sorted automatically |
+| Enable all-day reminders / time | Convert `scheduled:: 2025-02-10` into a reminder at e.g. `09:00` |
+| Polling interval (seconds) | How frequently to check for upcoming reminders (10–300) |
+| Daily rescan hour | Force a full graph rescan every day at the chosen hour |
+| Quiet hours (start/end) | Silence notifications between the times you specify |
+| Notification durations | Tune how long desktop / overdue / in-app banners stay on screen |
+
+Access everything in `Settings → Plugins → Reminder Notifications`.
+
+---
 
 ## Troubleshooting
 
-**No notifications?**
-1. Check browser console (F12) for error messages
-2. Run `/reminders: rescan` to refresh
-3. Verify your block uses supported timestamp format:
-   - ✅ `SCHEDULED: <2025-10-14 Mon 14:30> Task`
-   - ❌ `SCHEDULED: <2025-10-14> Task` (no time)
+1. **No notifications?**
+   - Verify you opened a Markdown graph (folder of `.md` files).
+   - Make sure the block uses `scheduled::` or a `SCHEDULED: <timestamp>` marker.
+   - Run `/reminders: rescan` and watch the developer console for parsing logs.
+2. **Getting duplicates?**
+   - Confirm your OS/phone clock and timezone are correct.
+   - Keep the polling interval around 10–30 seconds for reliability.
+3. **Swapping between DB and Markdown graphs?**
+   - Install both versions of the plugin and disable whichever doesn't match the active graph format.
 
-**Console debugging:**
-- Look for `🔔 Reminder Notifications plugin v1.3.0 starting...`
-- Check for detailed parsing messages when running rescan
+---
 
-## Development Roadmap
+## Development Notes
 
-Upcoming ideas:
+- Targets Markdown/file graphs (`:block/content`) and uses Logseq's standard datascript queries.
+- Everything lives in `index.js`-no bundler required.
+- `npm install` is only needed if you add tooling; the plugin ships as plain JS.
 
-1. Notification templates and custom sounds
-2. Advanced overdue handling and snooze functionality
-3. Repeating/recurring reminders
+PRs and issues are welcome!
 
-## Contributing
-
-1. Fork this repository
-2. Test your changes thoroughly
-3. Submit a pull request with clear description
+---
 
 ## License
 
-MIT License - See LICENSE file for details.
-
-## Support
-
-For issues:
-1. Check browser console for errors
-2. Include your Logseq version and block format
-3. Create an issue on GitHub with reproduction steps
+MIT © Joemnewton

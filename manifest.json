@@ -1,9 +1,9 @@
 {
   "id": "logseq-reminder-plugin-md",
-  "title": "Reminder Notifications (Markdown)",
-  "description": "Desktop and in-app notifications for scheduled blocks in Logseq. Never miss your scheduled tasks and reminders again!",
+  "title": "Reminder Notifications",
+  "description": "Desktop reminders for scheduled blocks (Markdown graphs).",
   "author": "Joemnewton",
-  "repo": "Joemnewton/logseq-reminder-plugin-md",
+  "repo": "Joemnewton/logseq-reminder-notifications-md",
   "icon": "./icon.svg",
   "theme": false,
   "effect": false,

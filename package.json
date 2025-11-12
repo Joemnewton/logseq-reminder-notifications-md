@@ -1,13 +1,20 @@
 {
   "name": "logseq-reminder-notifications-markdown",
   "version": "1.3.0",
-  "description": "Desktop and in-app notifications for scheduled blocks in Logseq (Markdown/File-based version)",
+  "description": "Desktop reminders for scheduled blocks in Markdown/file graphs.",
   "main": "index.js",
   "author": "Joemnewton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joemnewton/logseq-reminder-notifications-md.git"
+  },
+  "homepage": "https://github.com/Joemnewton/logseq-reminder-notifications-md",
   "license": "MIT",
   "logseq": {
     "id": "logseq-reminder-notifications-markdown",
-    "title": "Reminder Notifications (Markdown)",
-    "icon": "./icon.svg"
+    "title": "Reminder Notifications",
+    "icon": "./icon.svg",
+    "description": "Desktop reminders for scheduled Logseq Markdown graphs.",
+    "repo": "Joemnewton/logseq-reminder-notifications-md"
   }
 }
